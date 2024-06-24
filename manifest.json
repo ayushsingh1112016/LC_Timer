@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Timer Auto Clicker",
+  "version": "1.0",
+  "description": "Automatically clicks the timer button on LeetCode problem pages.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/problems/*/description/"],
+      "js": ["content.js"]
+    }
+  ]
+}
